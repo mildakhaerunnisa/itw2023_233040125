@@ -1,0 +1,34 @@
+*{
+    background-color: aqua;
+    font-family:georgia;
+}
+h1{
+    text-align: center;
+    font-family: comic sans ms;
+    font-size: 60px;
+    color: darkblue;
+}
+h4{
+    text-align: right;
+    font-style: italic;
+}
+p{
+    text-align: justify;
+    text-align: center;
+}
+#a{
+    color: white;
+}
+#b{
+    color: orange;
+}
+p{
+    text-align: center;
+}
+#a:hover{
+    color: red;
+}
+#c:hover{
+    background-color: blue; 
+    color: white;
+}
