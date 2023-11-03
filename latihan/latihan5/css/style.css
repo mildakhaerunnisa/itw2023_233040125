@@ -1,0 +1,172 @@
+/* font */
+@font-face{
+    font-family: 'sourcesanspro';
+    src: url(../fonts/sourcesanspro-regular-webfont.woff) format(woff);
+}
+
+/* style utama */
+body{
+    font: 18px/36px 'sourcesans','Arial Narrow', arial, sans-serif;
+    background-image: url(../img/dust_scratches.webp);
+}
+
+h1{
+    font-size: 70px;
+    color: #3f5d41;
+    margin: 50px 0;
+    text-align: center;
+    text-shadow: 2px 1px 1px black;
+}
+
+.container{
+    width: 90%;
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 5px 5px #3f5d41;
+    margin-bottom: 100px;
+}
+
+.gallery li{
+    width: 100px;
+    height: 150px;
+    /* overflow: hidden; */
+    box-shadow: 0px 0px 4px 2px #3f5d41;
+    float: left;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.gallery li span{
+    display: block;
+    width: 100px;
+    height: 150px;
+    background-color: rgba(200, 200, 200, 0.5);
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 45px;
+    color: black;
+    text-shadow: 1px 1px 1px grey;
+    opacity: 0;
+    transition: .3s;
+}
+
+.gallery li a:hover span{
+    opacity: 1;
+}
+
+.clear{
+    clear: both;
+}
+
+
+
+
+/* overlay */
+.overlay{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0);
+    z-index: 9999;
+    transition: .8s;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.overlay:target{
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.overlay img{
+    max-height: 100%;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, .5) ;
+}
+
+.overlay:target img{
+    animation: fade .5s;
+}
+
+.overlay .close{
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    margin-left: -25px;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    border: 1px solid white;
+    line-height: 10px;
+    padding: 5px;
+    opacity: 0;
+}
+
+.overlay:target .close{
+    animation: slideDownFade .3s .3s forwards;
+}
+
+.overlay:target .next,
+.overlay:target .previous{
+    animation: fade .3s .3s forwards;
+}
+
+
+
+
+/* navigasi */
+.next{
+    position: absolute;
+    top: 45%;
+    color: white;
+    size: 40px;
+    margin-left: 50px;
+    font-size: 50px;
+    opacity: 0;
+}
+
+.previous{
+    position: absolute;
+    top: 45%;
+    color: white;
+    size: 40px;
+    margin-left: -70px;
+    font-size: 50px;
+    opacity: 0;
+}
+
+
+
+
+/* animasi */
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes slideDownFade{
+    0%{
+        opacity: 0;
+        margin-top: -20px;
+    }
+
+    100%{
+        opacity: 1;
+        margin-top: 0;
+    }
+}
