@@ -1,0 +1,103 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="MildaKhaerunnisa" content="width=device-width, initial-scale=1.0">
+        <title>Latihan 7</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container">
+            <header class="header">
+                <div class="hero">
+                    <h2 class="heading">TXT MERCH</h2>
+                    <p class="sub-heading">Album</p>
+                </div>
+                <div class="features feature-1">
+                    <h4 class="price"> IDR 350K</h4>
+                    <p class="item">The Name Chapter</p>
+                </div>
+                <div class="features feature-2">
+                    <h4 class="price">IDR 350K</h4>
+                    <p class="item">Minisode</p>
+                </div>
+            </header>
+
+            <nav class="menu">
+                <div class="menu-toggle">
+                    <input type="checkbox">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="merch">
+                    <h1>TXT MERCH</h1>
+                </div>
+                <ul class="menu-list">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Product</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Gallery</a></li>
+                </ul>
+            </nav>
+
+            <section class="services">
+                <div class="service">
+                    <div class="icon">💛</div>
+                    <h3>The Dream Chapter</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sit quod aliquam, esse aperiam reiciendis, laborum nulla commodi beatae, neque qui culpa amet consectetur dolorum vitae! Accusantium exercitationem culpa unde?
+                    </p>
+                </div>
+                <div class="service">
+                    <div class="icon">🩷</div>
+                    <h3>Minisode</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sit quod aliquam, esse aperiam reiciendis, laborum nulla commodi beatae, neque qui culpa amet consectetur dolorum vitae! Accusantium exercitationem culpa unde?
+                    </p>
+                </div>
+                <div class="service">
+                    <div class="icon">💙</div>
+                    <h3>The Chaos Chapter</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sit quod aliquam, esse aperiam reiciendis, laborum nulla commodi beatae, neque qui culpa amet consectetur dolorum vitae! Accusantium exercitationem culpa unde?
+                    </p>
+                </div>
+                <div class="service">
+                    <div class="icon">💚</div>
+                    <h3>The Name Chapter</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sit quod aliquam, esse aperiam reiciendis, laborum nulla commodi beatae, neque qui culpa amet consectetur dolorum vitae! Accusantium exercitationem culpa unde?
+                    </p>
+                </div>
+            </section>
+
+            <section class="gallery">
+                <h2>Gallery</h2>
+                <img src="img/album1.png" alt="">
+                <img src="img/album2.png" alt="">
+                <img src="img/album3.png" alt="">
+                <img src="img/album4.png" alt="">
+                <img src="img/album5.png" alt="">
+                <img src="img/album6.png" alt="">
+                <img src="img/album7.png" alt="">
+                <img src="img/album8.png" alt="">
+                <img src="img/album9.png" alt="">
+                <img src="img/album10.png" alt="">
+            </section>
+
+        </div>
+        <script>
+            const menuToggle = document.querySelector('.menu-toggle input');
+            const nav = document.querySelector('nav ul');
+
+            menuToggle.addEventListener('click', function(){
+            nav.classList.toggle('slide');
+            });
+        </script>
+    </body>
+    </html>
